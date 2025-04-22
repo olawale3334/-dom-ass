@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            gap: 20px;
+            color: white;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+     <div id="main-content"></div>
+     
+     <script>
+
+
+         const bar = document.createElement("div")
+            bar.id = "barlist"
+            document.querySelector("#main-content").appendChild(bar)
+             let barl = document.createElement("ul")
+             barl.id ="nav"
+             document.querySelector("#barlist").appendChild(barl)
+            
+
+        const main = document.createElement("div")
+         main.className = "container"
+         document.querySelector("#main-content").appendChild(main)
+        
+           let hero = document.createElement("p")  
+            hero.className="hero-page"
+            hero.innerText ="Hello, I'm Olawale, a driven and ambitious web developer embarking on an exciting journey in the tech industry. With a strong foundation in Web2 development, I'm eager to apply my  skills and knowledge to build innovative solutions. As I begin my career as a developer,  my goal is to continuously learn,grow and deliver high-quality work, ultimately becoming a proficient and respected developer in the field"
+           
+
+            document.querySelector(".container").appendChild(hero)
+         
+
+
+         let nav = document.getElementById("nav")
+         const nav1 =document.createElement("li")
+         nav1.innerText ="HOME"
+
+         const nav2 =document.createElement("li")
+         nav2.innerText ="ABOUT"
+
+         const nav3=document.createElement("li")
+         nav3.innerText ="CONTACT"
+         nav.appendChild(nav1)
+         nav.appendChild(nav2)
+         nav.appendChild(nav3)
+        
+       
+
+
+         
+     </script>
+</body>
+</html>
